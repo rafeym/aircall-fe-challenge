@@ -1,0 +1,61 @@
+.activity-detail-container {
+    height: 490px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.call-info-container {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.call-info-container li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    
+}
+
+.call-info-container li svg {
+    font-size: 1.5em;
+}
+
+.call-info-container .info-details-container {
+    width: 70%;
+}
+
+.call-info-container .info-details-container .from {
+    font-weight: 700;
+}
+
+.call-info-container .info-details-container .to {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.info-details-container .heading-1 {
+    font-size: 1.2em;
+}
+
+.info-details-container .heading-2 {
+    font-size: 0.9em;
+}
+
+.call-info-container .info-details-container .to span {
+    font-weight: 700;
+}
+
+.call-info-container .info-divider {
+    width: 100%;
+    border: 1px solid #d5d5d5;
+}
+
+.answered {
+    color: green;
+}
+
+.missed {
+    color: red;
+}

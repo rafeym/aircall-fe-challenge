@@ -1,0 +1,41 @@
+.footer-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.8em 2.2em;
+    height: 3em;
+    position: sticky;
+    border-top: 1px solid #f4f4f3;
+}
+
+.footer-container svg {
+    font-size: 1.7em;
+    cursor: pointer;
+    color: #a0a0a0; 
+}
+
+.footer-container .phone {
+    color: #000;
+    border-bottom: 3px solid #3DBA20;
+    height: 3em;
+}
+
+.footer-container .dial-container {
+    padding-top: 4px;
+    padding-left: 3.3px;
+    padding-right: 3px;
+    padding-bottom: 2.8px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50px;
+    margin-bottom: 3em;
+    background-color: #fff;
+}
+
+.footer-container .dial-dots {
+    color: #fff;
+    background-color: #3DBA20;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 2.5em;
+}
+

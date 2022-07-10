@@ -1,0 +1,18 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e6e6e4;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-container svg {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.button-container p {
+    margin-left: 10px;
+    font-weight: 800;
+}
+

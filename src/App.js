@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react'
 
-function App() {
+import { useDispatch } from 'react-redux'
+import { fetchActivitiesAction } from './store/actions/activityActions'
+
+import Screens from './screens'
+
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Spinner from './components/Spinner/Spinner'
+
+const App = () => {
+  const [loading, setLoading] = useState(true)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    async function getActivities() {
+      await dispatch(fetchActivitiesAction())
+      setLoading(false)
+    }
+    getActivities()
+  }, [dispatch])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Header />
+      <div className='container-view'>
+        {loading ? <Spinner loading={loading} /> : <Screens />}
+      </div>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

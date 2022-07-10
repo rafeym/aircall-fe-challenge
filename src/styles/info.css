@@ -1,0 +1,19 @@
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #3DBA20;
+    border-radius: 10px;
+    background-color: #3DBA20;
+}
+
+.info-container svg {
+    margin-left: 10px;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.info-container .text-area-container {
+    width: 80%;
+    color: #fff;
+}
